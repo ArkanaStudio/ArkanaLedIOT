@@ -1,0 +1,137 @@
+*, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' , sans-serif;
+    cursor: url('assets/cursor.png'), auto;
+}
+
+.layouts {
+    max-width: 476px;
+    margin: 0 auto;
+    height: 100vh;
+    border: 1px solid black;
+    position: relative;
+}
+
+/* Nav-bar */
+.navbar {
+    background-color: #579fff;
+    padding: 16px;
+    text-align: center;
+}
+
+.navbar h3 {
+    font-weight: 800;
+    color: #fff;
+}
+
+/* Tittle-Led-Html */
+.page-title {
+    padding-top: 4px;
+}
+
+.page-title h3 {
+    text-align: center;
+    font-weight: 800;
+    font-size: x-large;
+}
+
+/* Led-Html */
+.leds {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding: 8px;
+}
+
+.led {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    padding: 16px;
+    background-color: white;
+    box-shadow: 0px 0px 4px 1px #999 ;
+}
+
+.led-location-text {
+    font-weight: 800;
+
+}
+
+.led-image {
+    width: 100px;
+    object-fit: cover;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 100px);
+    overflow-y: scroll;
+    padding: 32px;
+    gap: 10px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    background-color: white;
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.3);
+}
+
+.item-image {
+    width: 50%;
+}
+
+.item-submit, .led-submit {
+    background-color: #579fff;
+    padding: 4px 8px;
+    width: 100%;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+}
+
+.item-submit:hover {
+    scale: 102%;
+    transition: all 0.3s ease-in-out;
+}
+
+.bottombar {
+    position: absolute;
+    bottom: 0;
+    background-color: #579fff;
+    width: 100%;
+}
+
+.bottombar ul {
+    display: flex;
+    width: 100%;
+    list-style: none;
+    padding: 8px;
+}
+
+.bottombar ul li {
+    flex: 1;
+    text-align: center;
+}
+
+.bottombar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: x-large;
+    display: block;
+}
+
+.bottombar ul li a:hover {
+    scale: 115%;
+    transition: all .3s ease-in-out;
+}
+
